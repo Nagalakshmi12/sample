@@ -1,0 +1,33 @@
+________All Routers command___
+username techbee
+
+password techbee
+line vty 0 15
+login local
+transport ?
+transport input ssh
+exit
+crypto 
+crypto key generate rsa
+hostname appsupport
+crypto key generate rsa
+ip domain-name techbee.edu.in
+crypto key generate rsa
+500
+
+_____after system login_____
+enable secret techbee
+
+____key___
+sh crypto key mypubkey rsa
+
+
+________System______
+command prompt ssh
+ssh-l techbee 1.0.0.1
+password techbee
+en
+
+
+ 
+
