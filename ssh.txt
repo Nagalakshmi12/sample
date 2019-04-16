@@ -15,7 +15,7 @@ ip domain-name techbee.edu.in
 crypto key generate rsa
 500
 
-_____after system login_____
+_____after system login_____________
 enable secret techbee
 
 ____key___
